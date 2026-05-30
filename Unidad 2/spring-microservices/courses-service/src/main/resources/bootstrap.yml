@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: courses-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/students_db
+    username: root
+    password: jasmine123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
