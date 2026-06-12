@@ -1,0 +1,96 @@
+<div class="container">
+
+  <h1>PROFESORES</h1>
+
+  <p class="subtitle">
+    Administración de profesores y materias
+  </p>
+
+  <p class="total">Total: {{ teachers.length }}</p>
+
+  <div class="form-container">
+
+    <input
+      type="text"
+      placeholder="Nombre"
+      [(ngModel)]="teacherForm.name">
+
+    <input
+      type="text"
+      placeholder="Correo"
+      [(ngModel)]="teacherForm.email">
+
+    <select [(ngModel)]="teacherForm.subject">
+      <option value="">Seleccionar materia</option>
+
+      <option value="Programación Web">Programación Web</option>
+      <option value="Bases de Datos">Bases de Datos</option>
+      <option value="Redes">Redes</option>
+      <option value="Inteligencia Artificial">Inteligencia Artificial</option>
+      <option value="Sistemas Operativos">Sistemas Operativos</option>
+      <option value="Ingeniería de Software">Ingeniería de Software</option>
+      <option value="Estructura de Datos">Estructura de Datos</option>
+      <option value="Matemáticas">Matemáticas</option>
+      <option value="Física">Física</option>
+      <option value="Estadística">Estadística</option>
+      <option value="Administración">Administración</option>
+      <option value="Contabilidad">Contabilidad</option>
+      <option value="Topografia">Topografia</option>
+    </select>
+
+    <button
+      class="btn-save"
+      (click)="saveTeacher()">
+
+      {{ editingTeacher ? 'Actualizar' : 'Guardar' }}
+
+    </button>
+
+  </div>
+
+  <h2>Lista de profesores</h2>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Materia</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr *ngFor="let teacher of teachers">
+
+        <td>{{ teacher.id }}</td>
+        <td>{{ teacher.name }}</td>
+        <td>{{ teacher.email }}</td>
+        <td>{{ teacher.subject }}</td>
+
+        <td>
+
+          <button
+            class="btn-edit"
+            (click)="editTeacher(teacher)">
+            Editar
+          </button>
+
+          <button
+            class="btn-delete"
+            (click)="deleteTeacher(teacher.id)">
+            Eliminar
+          </button>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
