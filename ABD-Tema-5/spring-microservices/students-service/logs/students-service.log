@@ -1,0 +1,40 @@
+2026-05-29 15:31:02 - Fetching config from server at : http://localhost:8888
+2026-05-29 15:31:02 - Located environment: name=students-service, profiles=[default], label=null, version=88e9904e89aaa7982277f55f2947b8965c542ec5, state=null
+2026-05-29 15:31:03 - Fetching config from server at : http://localhost:8888
+2026-05-29 15:31:05 - Located environment: name=students-service, profiles=[default], label=null, version=88e9904e89aaa7982277f55f2947b8965c542ec5, state=null
+2026-05-29 15:31:05 - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/Cynthia21Morales/config-repo/students-service.yml'}]
+2026-05-29 15:31:05 - No active profile set, falling back to 1 default profile: "default"
+2026-05-29 15:31:05 - Fetching config from server at : http://localhost:8888
+2026-05-29 15:31:05 - Located environment: name=students-service, profiles=[default], label=null, version=88e9904e89aaa7982277f55f2947b8965c542ec5, state=null
+2026-05-29 15:31:05 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29 15:31:06 - Finished Spring Data repository scanning in 143 ms. Found 1 JPA repository interface.
+2026-05-29 15:31:06 - BeanFactory id=5e31a291-aa63-3db9-8615-88efa60e3698
+2026-05-29 15:31:06 - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-05-29 15:31:06 - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-05-29 15:31:06 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-29 15:31:06 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-29 15:31:06 - HHH000026: Second-level cache disabled
+2026-05-29 15:31:07 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29 15:31:07 - HikariPool-1 - Starting...
+2026-05-29 15:31:07 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b15ba1a
+2026-05-29 15:31:07 - HikariPool-1 - Start completed.
+2026-05-29 15:31:07 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-29 15:31:08 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29 15:31:08 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 15:31:09 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-29 15:31:10 - Cannot determine local hostname
+2026-05-29 15:31:10 - Eureka HTTP Client uses RestTemplate.
+2026-05-29 15:31:10 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-29 15:31:10 - Started StudentsServiceIntegrationTest in 15.872 seconds (process running for 17.224)
+2026-05-29 15:31:11 - Guardando estudiante: Prueba Real
+2026-05-29 15:31:11 - Estudiante guardado correctamente con ID: 17
+2026-05-29 15:31:11 - Se está obteniendo la lista de estudiantes
+2026-05-29 15:31:12 - Guardando estudiante: Kevin Morales
+2026-05-29 15:31:12 - Estudiante guardado correctamente con ID: null
+2026-05-29 15:31:12 - Se está obteniendo la lista de estudiantes
+2026-05-29 15:31:12 - Consultando cursos desde courses-service
+2026-05-29 15:31:12 - Respuesta recibida desde courses-service
+2026-05-29 15:31:12 - Se está obteniendo la lista de estudiantes
+2026-05-29 15:31:12 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 15:31:12 - HikariPool-1 - Shutdown initiated...
+2026-05-29 15:31:12 - HikariPool-1 - Shutdown completed.
