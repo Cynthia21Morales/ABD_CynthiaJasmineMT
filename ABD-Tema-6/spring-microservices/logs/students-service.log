@@ -1,0 +1,17 @@
+2026-06-15 09:19:39 - DiscoveryClient_STUDENTS-SERVICE/jasminesystems.mx:students-service:8081 - Re-registering apps/STUDENTS-SERVICE
+2026-06-15 09:19:39 - DiscoveryClient_STUDENTS-SERVICE/jasminesystems.mx:students-service:8081: registering service...
+2026-06-15 09:19:39 - DiscoveryClient_STUDENTS-SERVICE/jasminesystems.mx:students-service:8081 - registration status: 204
+2026-06-15 09:20:10 - Se está obteniendo la lista de estudiantes
+2026-06-15 09:20:10 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@26f204a4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-06-15 09:20:10 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@71990ed0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-06-15 09:20:10 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@412ce7b7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-06-15 09:20:10 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@70a08d22 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-06-15 09:20:10 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@34112200 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-06-15 09:20:10 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@dc755dc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-06-15 09:20:10 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2b700a8c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-06-15 09:20:10 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5f4d5b5d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-06-15 09:20:10 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@62716396 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-06-15 09:20:10 - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@55afa3b1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-06-15 09:20:39 - Resolving eureka endpoints via configuration
+2026-06-15 09:22:16 - Se está obteniendo la lista de estudiantes
+2026-06-15 09:25:39 - Resolving eureka endpoints via configuration
