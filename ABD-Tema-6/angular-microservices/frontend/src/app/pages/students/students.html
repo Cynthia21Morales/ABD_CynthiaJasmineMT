@@ -1,0 +1,95 @@
+<h1>ESTUDIANTES</h1>
+<p>Total: {{ students.length }}</p>
+
+<div class="container">
+
+<div class="form-box">
+  <input
+  type="text"
+  placeholder="Número de Control"
+  [(ngModel)]="studentForm.controlNumber" />
+
+<input
+  type="text"
+  placeholder="Nombre"
+  [(ngModel)]="studentForm.name" />
+
+<input
+  type="email"
+  placeholder="Correo Institucional"
+  [(ngModel)]="studentForm.institutionalEmail" />
+
+<select [(ngModel)]="studentForm.career">
+  <option value="">Seleccionar carrera</option>
+  <option value="Ingenieria en Computacionales">Ingenieria en Sistemas Computacionales</option>
+  <option value="Ingenieria en Gestion Empresarial">Ingenieria en Gestion Empresarial</option>
+  <option value="Ingenieria Civil">Ingenieria Civil</option>
+  <option value="Ingenieria en Innovacion Agricola">Ingenieria en Innovacion Agricola</option>
+  <option value="Ingenieria en Agronomia">Ingenieria en Agronomia</option>
+  <option value="Ingeniria Industrial">Ingenieria Industrial</option>
+</select>
+
+<select [(ngModel)]="studentForm.semester">
+  <option value="">Seleccionar semestre</option>
+  <option [ngValue]="1">1°</option>
+  <option [ngValue]="2">2°</option>
+  <option [ngValue]="3">3°</option>
+  <option [ngValue]="4">4°</option>
+  <option [ngValue]="5">5°</option>
+  <option [ngValue]="6">6°</option>
+  <option [ngValue]="7">7°</option>
+  <option [ngValue]="8">8°</option>
+  <option [ngValue]="9">9°</option>
+  <option [ngValue]="10">10°</option>
+  <option [ngValue]="11">11°</option>
+  <option [ngValue]="12">12°</option>
+</select>
+
+  <button (click)="saveStudent()">
+    {{ editingStudent ? 'Actualizar' : 'Guardar' }}
+  </button>
+
+  <button *ngIf="editingStudent" (click)="cancelEditStudent()">
+    Cancelar
+  </button>
+</div>
+</div>
+
+<h1>Lista de estudiantes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+<th>No. Control</th>
+<th>Nombre</th>
+<th>Correo Institucional</th>
+<th>Carrera</th>
+<th>Semestre</th>
+<th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+      <td>{{ student.id }}</td>
+<td>{{ student.controlNumber }}</td>
+<td>{{ student.name }}</td>
+<td>{{ student.institutionalEmail }}</td>
+<td>{{ student.career }}</td>
+<td>{{ student.semester }}</td>
+      <td>
+        <button
+  class="btn-edit"
+  (click)="editStudent(student)">
+  Editar
+</button>
+
+<button
+  class="btn-delete"
+  (click)="deleteStudent(student.id)">
+  Eliminar
+</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
