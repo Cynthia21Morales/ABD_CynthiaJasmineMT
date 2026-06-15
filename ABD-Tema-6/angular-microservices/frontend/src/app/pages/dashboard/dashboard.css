@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+.dashboard-container{
+  min-height:100vh;
+  padding:40px;
+
+  background:
+  linear-gradient(
+    rgba(10,25,55,.55),
+    rgba(10,25,55,.55)
+  ),
+  url('/TECNM.png');
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.hero{
+  max-width:1200px;
+  margin:auto;
+  padding-top:60px;
+  padding-bottom:70px;
+}
+
+.hero-content{
+  max-width:700px;
+}
+
+.hero h1{
+  color:white;
+  font-size:4rem;
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.hero h3{
+  color:#dbeafe;
+  font-size:1.6rem;
+  font-weight:500;
+  margin-bottom:20px;
+}
+
+.subtitle{
+  color:#f1f5f9;
+  font-size:1.2rem;
+  line-height:1.8;
+}
+
+.cards{
+  display:flex;
+  justify-content:center;
+  gap:35px;
+  flex-wrap:wrap;
+  max-width:1200px;
+  margin:auto;
+}
+
+.card{
+  width:320px;
+  min-height:220px;
+
+  padding:35px;
+
+  text-decoration:none;
+
+  background:rgba(255,255,255,.95);
+
+  border-radius:20px;
+
+  color:#1e293b;
+
+  box-shadow:
+  0 15px 35px rgba(0,0,0,.25);
+
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:
+  0 25px 45px rgba(0,0,0,.35);
+}
+
+.card h2{
+  color:#1e3c72;
+  font-size:2rem;
+  margin-bottom:20px;
+}
+
+.card p{
+  color:#64748b;
+  line-height:1.8;
+  font-size:1rem;
+}
+
+@media(max-width:768px){
+
+  .hero h1{
+    font-size:2.8rem;
+  }
+
+  .hero h3{
+    font-size:1.2rem;
+  }
+
+  .card{
+    width:100%;
+  }
+
+}

@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: gateway-service
+
+  config:
+    import: "config-server:http://localhost:8888"
+
+logging:
+  level:
+    org.springframework.cloud.config: DEBUG

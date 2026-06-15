@@ -1,0 +1,87 @@
+<div class="container">
+
+  <h1>CURSOS</h1>
+
+  <p class="subtitle">
+    Administración de cursos y asignación de profesores
+  </p>
+
+  <p class="total">Total: {{ courses.length }}</p>
+
+  <div class="form-container">
+
+    <input
+      type="text"
+      placeholder="Nombre del curso"
+      [(ngModel)]="courseForm.name">
+
+    <select [(ngModel)]="courseForm.teacherId">
+
+      <option [ngValue]="null">
+        Seleccionar profesor
+      </option>
+
+      <option
+        *ngFor="let teacher of teachers"
+        [ngValue]="teacher.id">
+
+        {{ teacher.name }}
+
+      </option>
+
+    </select>
+
+    <button
+      class="btn-save"
+      (click)="saveCourse()">
+
+      {{ editingCourse ? 'Actualizar' : 'Guardar' }}
+
+    </button>
+
+  </div>
+
+  <h2>Lista de cursos</h2>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Curso</th>
+        <th>Profesor</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr *ngFor="let course of courses">
+
+        <td>{{ course.id }}</td>
+        <td>{{ course.name }}</td>
+        <td>{{ getTeacherName(course.teacherId) }}</td>
+
+        <td>
+
+          <button
+            class="btn-edit"
+            (click)="editCourse(course)">
+            Editar
+          </button>
+
+          <button
+            class="btn-delete"
+            (click)="deleteCourse(course.id)">
+            Eliminar
+          </button>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
